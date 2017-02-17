@@ -1,12 +1,15 @@
-function FizzBuzz(attr) {
-  this.first_number = attr.first_number;
+function FizzBuzzCalculator(){
 }
 
-FizzBuzz.prototype.determine_fizzBuzz = function() {
-  this.first_number = 3;
-
-FizzBuzz.prototype.calculate_fizz_buzz = function() {
-    calculator = new FZCalculator();
-  };
-
+FizzBuzzCalculator.prototype.fizz_buzz_calc = function(num){
+  if (num === 0){
+        return num;}
+      else if(num % 3 === 0 && num % 5 === 0)
+        return ("fizzBuzz");
+      else if(num % 5 === 0)
+        return ("buzz");
+      else if(num % 3 === 0)
+        return ("fizz")
+      else
+        return num;
 };
