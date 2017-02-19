@@ -9,6 +9,10 @@ it("should return 1 if number 1", function() {
   expect(number.fizz_buzz_calc(1)).toEqual(1);
 });
 
+it("should return 2 if number 2", function() {
+  expect(number.fizz_buzz_calc(2)).toEqual(2);
+});
+
 it("should return 'fizz' if number is divisible by 3", function() {
   expect(number.fizz_buzz_calc(3)).toBe('fizz');
 });
